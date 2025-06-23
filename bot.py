@@ -13,12 +13,13 @@ with open("config.json") as f:
     config = json.load(f)
 
 intents = discord.Intents.all()  # để dùng on_member_join, etc.
-bot = commands.Bot(command_prefix=config["prefix"], intents=intents)
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 INITIAL_COGS = [
     "cogs.moderation",
     "cogs.music",
-    "cogs.welcome"
+    "cogs.welcome",
+    "cogs.chatbot"  # Thêm dòng này
 ]
 
 EVENTS = [
@@ -27,9 +28,18 @@ EVENTS = [
     "events.on_message"
 ]
 
+GUILD_ID = discord.Object(id=1015986823991939173) 
+
 @bot.event
 async def on_ready():
     print(f"Bot is online as {bot.user}")
+        
+    try:
+        synced = await bot.tree.sync()
+        print(f"Đã sync {len(synced)} slash command.")
+    except Exception as e:
+        print(f"Lỗi khi sync slash command: {e}")
+
 
 async def main():
     for cog in INITIAL_COGS + EVENTS:
