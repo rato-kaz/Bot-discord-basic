@@ -41,7 +41,6 @@ my-discord-bot/
 ```
 git clone https://github.com/rato-kaz/Bot-discord-basic.git
 ```
-cd my-discord-bot
 
 2. Tạo virtual environment
 ```
