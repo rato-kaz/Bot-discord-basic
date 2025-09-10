@@ -16,10 +16,10 @@ intents = discord.Intents.all()  # để dùng on_member_join, etc.
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 INITIAL_COGS = [
-    "cogs.moderation",
-    "cogs.music",
+    "cogs.moderation", 
+    "cogs.music", 
     "cogs.welcome",
-    "cogs.chatbot"  # Thêm dòng này
+    "cogs.stable_diffusion"
 ]
 
 EVENTS = [
