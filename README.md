@@ -13,8 +13,8 @@ Tích hợp Stable Diffusion để tạo ảnh từ prompt
 (Sắp tới) Tích hợp AI Chatbot (GPT, Hugging Face, …)
 
 ## 📂 Cấu trúc dự án
-my-discord-bot/
 ```
+my-discord-bot/
 ├── bot.py # Entry point chính
 ├── cogs/ # Các module lệnh (command handler)
 │ ├── moderation.py
