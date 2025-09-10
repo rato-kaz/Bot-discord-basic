@@ -44,21 +44,26 @@ git clone https://github.com/rato-kaz/Bot-discord-basic.git
 cd my-discord-bot
 
 2. Tạo virtual environment
-```python -m venv venv
+```
+python -m venv venv
 ```
 # Windows
-```venv\Scripts\activate
+```
+venv\Scripts\activate
 ```
 # Linux/macOS
-```source venv/bin/activate
+```
+source venv/bin/activate
 ```
 
 3. Cài dependencies
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 
 ## ▶️ Chạy bot
-```python bot.py
+```
+python bot.py
 ```
 ## ⚙️ Các tính năng
 # 1. Moderation
