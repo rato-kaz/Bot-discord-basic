@@ -12,29 +12,30 @@ Tích hợp Stable Diffusion để tạo ảnh từ prompt
 
 (Sắp tới) Tích hợp AI Chatbot (GPT, Hugging Face, …)
 
-📂 Cấu trúc dự án
+## 📂 Cấu trúc dự án
 my-discord-bot/
-├── bot.py               # Entry point chính
-├── cogs/                # Các module lệnh (command handler)
-│   ├── moderation.py
-│   ├── music.py
-│   ├── welcome.py
-│   └── stable_diffusion.py
-├── events/              # Event listener
-│   ├── on_ready.py
-│   ├── on_member_join.py
-│   └── on_message.py
-├── utils/               # Helper functions, DB, checks
-│   ├── database.py
-│   ├── checks.py
-│   └── helpers.py
-├── data/                # Logs, cache
-│   ├── logs/
-│   └── cache.json
-├── config.json          # Config chung (prefix, settings)
-├── .env                 # Chứa token/API key (không push lên git!)
-├── requirements.txt     # Các thư viện cần cài
+├── bot.py # Entry point chính
+├── cogs/ # Các module lệnh (command handler)
+│ ├── moderation.py
+│ ├── music.py
+│ ├── welcome.py
+│ └── stable_diffusion.py
+├── events/ # Event listener
+│ ├── on_ready.py
+│ ├── on_member_join.py
+│ └── on_message.py
+├── utils/ # Helper functions, DB, checks
+│ ├── database.py
+│ ├── checks.py
+│ └── helpers.py
+├── data/ # Logs, cache
+│ ├── logs/
+│ └── cache.json
+├── config.json # Config chung (prefix, settings)
+├── .env # Chứa token/API key (không push lên git!)
+├── requirements.txt # Các thư viện cần cài
 └── README.md
+
 
 🚀 Cài đặt
 1. Clone repo
