@@ -10,8 +10,6 @@ Chào mừng thành viên mới
 
 Tích hợp Stable Diffusion để tạo ảnh từ prompt
 
-(Sắp tới) Tích hợp AI Chatbot (GPT, Hugging Face, …)
-
 ## 📂 Cấu trúc dự án
 ```
 my-discord-bot/
@@ -40,58 +38,48 @@ my-discord-bot/
 
 ## 🚀 Cài đặt
 1. Clone repo
+```
 git clone https://github.com/rato-kaz/Bot-discord-basic.git
+```
 cd my-discord-bot
 
 2. Tạo virtual environment
-python -m venv venv
+```python -m venv venv
+```
 # Windows
-venv\Scripts\activate
+```venv\Scripts\activate
+```
 # Linux/macOS
-source venv/bin/activate
+```source venv/bin/activate
+```
 
 3. Cài dependencies
-pip install -r requirements.txt
-
-## 🔑 Cấu hình
-
-Tạo file .env (không push lên git):
-
-BOT_TOKEN=your_discord_bot_token
-HF_API_KEY=your_huggingface_api_token
-
-
-File config.json ví dụ:
-
-{
-  "prefix": "!",
-  "default_volume": 50,
-  "welcome_channel": 123456789012345678
-}
+```pip install -r requirements.txt
+```
 
 ## ▶️ Chạy bot
-python bot.py
+```python bot.py
+```
+## ⚙️ Các tính năng
+# 1. Moderation
 
-⚙️ Các tính năng
-1. Moderation
+- !kick @user – kick user
 
-!kick @user – kick user
+- !ban @user – ban user
 
-!ban @user – ban user
+# 2. Music
 
-2. Music
+-!play <youtube_url> – phát nhạc từ YouTube
 
-!play <youtube_url> – phát nhạc từ YouTube
+-!stop – dừng phát
 
-!stop – dừng phát
-
-3. Welcome
+# 3. Welcome
 
 Tự động gửi lời chào khi có người mới vào server
 
-4. Stable Diffusion (AI Image)
+# 4. Stable Diffusion (AI Image)
 
-!imagine <prompt> – tạo ảnh từ văn bản
+- !imagine <prompt> – tạo ảnh từ văn bản
 
 ## 🌐 Triển khai
 
@@ -108,6 +96,6 @@ VPS riêng
 
 Dùng GitHub Secrets nếu deploy qua CI/CD
 
-📜 License
+## 📜 License
 
 MIT License
