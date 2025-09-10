@@ -1,4 +1,4 @@
-🤖 My Discord Bot
+## 🤖 My Discord Bot
 
 Một bot Discord đa chức năng được viết bằng Python + discord.py, có thể:
 
@@ -38,7 +38,7 @@ my-discord-bot/
 └── README.md
 ```
 
-🚀 Cài đặt
+## 🚀 Cài đặt
 1. Clone repo
 git clone https://github.com/rato-kaz/Bot-discord-basic.git
 cd my-discord-bot
@@ -53,7 +53,7 @@ source venv/bin/activate
 3. Cài dependencies
 pip install -r requirements.txt
 
-🔑 Cấu hình
+## 🔑 Cấu hình
 
 Tạo file .env (không push lên git):
 
@@ -69,7 +69,7 @@ File config.json ví dụ:
   "welcome_channel": 123456789012345678
 }
 
-▶️ Chạy bot
+## ▶️ Chạy bot
 python bot.py
 
 ⚙️ Các tính năng
@@ -93,7 +93,7 @@ Tự động gửi lời chào khi có người mới vào server
 
 !imagine <prompt> – tạo ảnh từ văn bản
 
-🌐 Triển khai
+## 🌐 Triển khai
 
 Bạn có thể deploy bot bằng:
 
@@ -105,9 +105,6 @@ Docker
 
 VPS riêng
 
-🛡️ Lưu ý bảo mật
-
-Không bao giờ push .env hoặc token lên GitHub
 
 Dùng GitHub Secrets nếu deploy qua CI/CD
 
